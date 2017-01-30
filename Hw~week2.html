@@ -1,0 +1,68 @@
+<html>
+  <script>
+    var myansweris = {
+      count:0,    
+      score: 0, 
+      number:10,         
+    }
+    
+        console.log("34+26" );
+        console.log('To input ur answer use the following format "myansweris.number=YOUR_ACTUAL_ANSWER  You have 7 seconds to solve each Question! GOODLUCK');
+    function gameLoop() {     
+
+   
+      if (myansweris.count==0) {
+
+          
+          if (myansweris.number==60 && myansweris.count==0){
+              myansweris.score++
+              myansweris.count++
+             console.log('Correct answer your score is now ' + myansweris.score);
+            console.log("What is 344*0" );
+          }
+          else{
+           console.log("TIME OUT!! NEXT Question..What is 344*0" );
+            myansweris.count++  
+          }
+           setTimeout(gameLoop, 7000);      
+      } else {
+ 
+          if (myansweris.count==1) {
+
+
+          if (myansweris.number==0 && myansweris.count==1){
+              myansweris.score++
+              myansweris.count++
+             console.log('Correct answer your score is now ' + myansweris.score);
+            console.log("What is 722*2" );
+          }
+          else{
+           console.log("TIME OUT!! NEXT Question..What is 722*2" );
+            myansweris.count++  
+          }
+           setTimeout(gameLoop, 7000);  
+            }
+          else{
+                 if (myansweris.count==2) {
+
+
+                          if (myansweris.number==1444 && myansweris.count==2){
+                              myansweris.score++
+                              myansweris.count++
+                             console.log('Correct answer your score is now ' + myansweris.score);
+                            console.log("This is the end your final score is " + myansweris.score );
+                          }
+                          else{
+                           console.log("Game Over!! Your final score is " + myansweris.score );
+                            myansweris.count++  
+                          }
+                           setTimeout(gameLoop, 7000);  
+                            }
+          }
+          
+          
+    }
+    }
+    setTimeout(gameLoop, 7000);
+  </script>
+</html>
